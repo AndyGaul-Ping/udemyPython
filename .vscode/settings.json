@@ -1,5 +1,5 @@
 {
-    "python.formatting.provider": "yapf",
+    "python.formatting.provider": "autopep8",
     "yaml.customTags": [
         "!And",
         "!And sequence",
