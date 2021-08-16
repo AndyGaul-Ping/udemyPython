@@ -6,7 +6,6 @@ alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n'
 def encrypt(e_text,e_shift,e_direction):
     output =""
     for c in range(0,(len(e_text))):
-        print(f"output = {output}")
         if e_text[c] not in alphabet :
             # non-alphabet chars
             output += e_text[c]
@@ -20,7 +19,7 @@ def encrypt(e_text,e_shift,e_direction):
                 shift_index %= len(alphabet)
             output += alphabet[shift_index]
     
-    print(f"output = {output}")
+    print(f"RESULT:-\n{output}\n")
 
 again = True
 while again:
@@ -40,3 +39,7 @@ while again:
     
     if "y" not in input("Again?"):
         again = False
+
+my_tools.clrscr()
+print(caesar_art.title)
+print("Goodbye.")
